@@ -2,9 +2,11 @@ class ServicesController {
   async index(req, res) {
     res.send("Hello, services!!!");
   }
-}
 
-app.get("/services", (req, res) => {});
+  async store(req, res) {
+    res.send("POST services");
+  }
+}
 
 module.exports = {
   ServicesController,
