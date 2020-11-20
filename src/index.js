@@ -1,9 +1,8 @@
 const express = require('express');
+const { routes } = require("./routes");
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('Hello, world!!!');
-});
+app.use(routes);
 
-app.listen(3333, () => console.log('Server running on http://localhost:3333'));  
+app.listen(3333, () => console.log("Server running on http://localhost:3333"));
